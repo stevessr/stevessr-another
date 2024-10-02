@@ -1,0 +1,3 @@
+[submodule "themes/test theme"]
+   path = themes/test theme
+   url = https://github.com/stevessr/test-theme.git
