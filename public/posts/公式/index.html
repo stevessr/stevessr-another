@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <title>stevessr的自定义hugo博客</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<link rel="stylesheet" href="/css/styles.css">
+<link rel="stylesheet" href="/library/highlight.js/monokai.min.css">
+<script src="/library/highlight.js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+  
+</head>
+<body>
+    
+        <header>
+    <link rel="stylesheet" href="/css/styles.css">
+    <h1>stevessr的自定义hugo博客</h1>
+    <link rel="stylesheet" href="/css/menu.css">
+<nav>
+    <button class="hamburger-menu">&#9776;</button> 
+    <ul class="main-menu">
+        <li><a href="/">Home</a></li>
+        <li class="dropdown"><a href="/about">About</a><ul class="dropdown-content"><li><a href="/list">list</a></li></ul></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/donate">Donate</a></li>
+        <li class="dropdown">
+            <a href="/tags">Tags</a>
+            <ul class="dropdown-content">
+                
+                <li><a href="/tags/adguard">adguard</a></li>
+                
+                <li><a href="/tags/chart">chart</a></li>
+                
+                <li><a href="/tags/go">go</a></li>
+                
+                <li><a href="/tags/hugo">hugo</a></li>
+                
+                <li><a href="/tags/nodejs20">nodejs20</a></li>
+                
+                <li><a href="/tags/replit">replit</a></li>
+                
+                <li><a href="/tags/uptime-kuma">uptime kuma</a></li>
+                
+                <li><a href="/tags/windows">windows</a></li>
+                
+                <li><a href="/tags/%E7%99%BD%E5%AB%96">白嫖</a></li>
+                
+                <li><a href="/tags/%E8%8B%B1%E8%AF%AD">英语</a></li>
+                
+                <li><a href="/tags/%E9%A2%9C%E8%89%B2">颜色</a></li>
+                
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="/Categories">Categories</a>
+            <ul class="dropdown-content">
+                
+                <li><a href="/categories/example-category">example-category</a></li>
+                
+                <li><a href="/categories/go">go</a></li>
+                
+                <li><a href="/categories/hugo">hugo</a></li>
+                
+                <li><a href="/categories/nodejs20">nodejs20</a></li>
+                
+                <li><a href="/categories/uptime-kuma">uptime kuma</a></li>
+                
+                <li><a href="/categories/%E7%99%BD%E5%AB%96">白嫖</a></li>
+                
+                <li><a href="/categories/%E8%8B%B1%E8%AF%AD">英语</a></li>
+                
+                <li><a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA">计算机</a></li>
+                
+                <li><a href="/categories/%E9%A2%9C%E8%89%B2">颜色</a></li>
+                
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const mainMenu = document.querySelector('.main-menu');
+
+    hamburgerMenu.addEventListener('click', function() {
+        mainMenu.classList.toggle('active');
+    });
+});
+
+</script>
+
+</header>
+  
+    
+
+    <main>
+        
+<link rel="stylesheet" href="/css/post.css">
+
+<div class="container">
+    <div class="content-layout">
+        
+        <aside class="post-toc">
+            <div class="toc-section">
+                <p><strong>文章目录</strong></p>
+                <nav id="TableOfContents"></nav>
+            </div>
+        </aside>
+
+        
+        <article class="post-content animate-expand">
+            <h1>公式</h1>
+            <p>$$
+X=\sum_{i=1}^{4}{\frac{(o_i-e_i)^2}{e_i}}=6.25
+$$</p>
+<p>$$
+\chi^2=\frac{n(ad-bc)^2}{(a+b)(c+d)(a+c)(b+d)}
+$$</p>
+<p>$$
+\frac{P\left(Y=1,X=1\right)}{P\left(X=1\right)}=\frac{P\left(Y=1\right)\left[1-P\left(X=1\ |\ Y=1\right)\right]}{1-P\left(X=1\right)} =\frac{P\left(Y=1\right)-P\left(Y=1,X=1\right)}{1-P(X=1)}
+$$</p>
+<p>$$
+P\left(\chi^2\right)=\frac{1}{\sqrt2\Gamma(1/2)}x^{-\frac{1}{2}}e^{-\frac{x}{2}}
+$$</p>
+<p>$$
+\Gamma\left(x\right)=\int_{0}^{+\infty}{x^{n-1}e^{-x}dx}
+$$</p>
+<p>写到这，那么接下来的检验就很简单了，我们只需要把值代进去一算，看算出来的
+$$\chi^2$$
+是“较大”还是“较小”。如果较小，说明我们有理由去说明假设
+$$H_0$$
+是成立的，如果较大，那说明我们没有足够的理由去说明
+$$H_0$$
+是不成立的，也就是说，谈恋爱是跟听情歌有关系的。关于较大较小是如何判断的，考试时会贴心地给你一张表，但这个表是如何算出来的，这就涉及到一些本科的知识了。接下来的是拓展内容，
+$$\chi^2$$
+的概率分布服从一个名为卡方分布的东西，它的概率密度函数长这样：</p>
+<p>$$P\left(\chi^2\right)=\frac{1}{2^\frac{n}{2}\Gamma(n/2)}x^{\frac{n}{2}-1}e^{-\frac{x}{2}}$$</p>
+<p>其中n是自由度，数学家已经证明了在
+$$H_0$$
+成立的前提下，我们在两个分类变量下算出来的
+$$\chi^2$$
+服从
+$$n=1$$
+的卡方分布，
+$$\Gamma(x)$$
+是$$gamma$$函数，它长成这个样子：</p>
+<p>$$\Gamma\left(x\right)=\int_{0}^{+\infty}{x^{n-1}e^{-x}dx}$$</p>
+<p>所以：</p>
+<p>$$P\left(\chi^2\right)=\frac{1}{\sqrt2\Gamma(1/2)}x^{-\frac{1}{2}}e^{-\frac{x}{2}}$$</p>
+<p>它的图像大概长这样：</p>
+
+        </article>
+
+        
+        <aside class="post-meta">
+            
+
+            
+        </aside>
+    </div>
+     
+
+
+
+
+
+
+
+ 
+</div>
+  
+    </main>
+
+    
+        <footer>
+    <p>&copy; 2024 map[]</p>
+</footer>
+  
+    
+
+    
+<link rel="stylesheet" href="/js/ajax.js">
+  
+</body>
+</html>

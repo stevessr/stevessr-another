@@ -1,0 +1,50 @@
+.contact-page, .donate-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.contact-page h1, .donate-page h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #2E8B57;
+}
+
+.contact-page article, .donate-page article {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+}
+
+form label, form input, form textarea {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+form input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #2E8B57;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #3CB371;
+}
+
+.donate-options ul {
+    list-style: none;
+    padding: 0;
+}
+
+.donate-options li {
+    margin-bottom: 10px;
+}
+
+.donate-options a {
+    color: #2E8B57;
+    text-decoration: underline;
+}

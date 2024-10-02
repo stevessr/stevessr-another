@@ -1,0 +1,13 @@
+[
+    {{- $paginator := .Paginate (where .Data.Pages "Type" "post") -}}
+    {{- range $paginator.Pages -}}
+    {
+      "title": "{{ .Title | safeJS }}",
+      "date": "{{ .Date.Format "2006-01-02" }}",
+      "summary": "{{ .Summary | plainify | safeJS }}",
+      "url": "{{ .Permalink }}",
+      "tags": [{{ range $index, $tag := .Params.tags }}{{ if $index }}, {{ end }}"{{ $tag }}"{{ end }}]
+    }{{ if not (last $paginator.Pages) }},{{ end }}
+    {{- end -}}
+  ]
+  

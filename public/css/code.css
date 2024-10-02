@@ -1,0 +1,12 @@
+/* 自定义代码块背景颜色和文本颜色 */
+pre code {
+    background-color: aquamarine;  /* 背景颜色 */
+    color: #D8DEE9;  /* 代码文本颜色 */
+}
+
+/* 行号样式（如果启用了行号） */
+pre .line-numbers-rows {
+    background-color: aquamarine;
+    color: aquamarine;
+}
+

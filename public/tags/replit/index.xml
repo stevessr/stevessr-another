@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Replit on stevessr的自定义hugo博客</title>
+    <link>http://localhost:1313/tags/replit/</link>
+    <description>Recent content in Replit on stevessr的自定义hugo博客</description>
+    <generator>Hugo</generator>
+    <language>en_us</language>
+    <lastBuildDate>Fri, 14 Jul 2023 18:52:56 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/replit/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AdGuard Home</title>
+      <link>http://localhost:1313/posts/adguardhome/</link>
+      <pubDate>Fri, 14 Jul 2023 18:52:56 +0800</pubDate>
+      <guid>http://localhost:1313/posts/adguardhome/</guid>
+      <description>部署AgGuard</description>
+    </item>
+  </channel>
+</rss>

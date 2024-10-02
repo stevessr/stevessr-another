@@ -1,0 +1,160 @@
+/* 基础布局 */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f6f8fa;
+    margin: 0;
+    padding: 0;
+}
+
+.github-layout {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 仓库头部样式 */
+.repo-header {
+    background-color: #24292e;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.repo-header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.repo-header p {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+/* 文件列表样式 */
+.repo-content h2 {
+    font-size: 1.5rem;
+    color: #24292e;
+    margin-bottom: 10px;
+}
+
+.file-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid #e1e4e8;
+}
+
+.file-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #e1e4e8;
+}
+
+.file-item:hover {
+    background-color: #f1f8ff;
+}
+
+.file-info {
+    display: flex;
+    align-items: center;
+}
+
+.file-name {
+    color: #0366d6;
+    font-size: 1.25rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.file-name:hover {
+    text-decoration: underline;
+}
+
+.file-date {
+    color: #586069;
+    margin-left: 20px;
+    font-size: 0.9rem;
+}
+
+.file-summary {
+    color: #586069;
+    font-size: 0.95rem;
+    margin-left: 40px;
+    max-width: 600px;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f6f8fa;
+    margin: 0;
+    padding: 0;
+}
+
+.contribution-graph {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contribution-graph h2 {
+    font-size: 1.5rem;
+    color: #24292e;
+    margin-bottom: 20px;
+}
+
+.contribution-grid {
+    display: grid;
+    grid-template-columns: repeat(53, 1fr); /* 53列，每列代表一周 */
+    gap: 2px;
+    background-color: #fff;
+    border: 1px solid #d1d5da;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+.contribution-cell {
+    width: 12px;
+    height: 12px;
+    background-color: #ebedf0; /* 默认背景色 */
+    position: relative;
+}
+
+.contribution-cell:hover .cell-color {
+    border: 1px solid #0366d6;
+    box-shadow: 0 0 2px rgba(0,0,0,0.1);
+}
+
+.cell-color {
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    transition: background-color 0.3s;
+}
+
+.contribution-graph {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contribution-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+}
+
+.contribution-cell {
+    width: 20px;
+    height: 20px;
+    background-color: #ebedf0; /* 默认灰色 */
+    border-radius: 3px;
+}
+
+.month-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}

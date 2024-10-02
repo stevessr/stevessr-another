@@ -1,0 +1,28 @@
+{{ define "main" }}
+  <h1>{{ .Site.Title }}</h1>
+  <p>{{ .Site.Params.description }}</p>
+
+  {{ range .Paginator.Pages }}
+    <article>
+      <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+      <p>{{ .Summary }}</p>
+    </article>
+  {{ end }}
+
+
+  <h1>{{ .Site.Title }}</h1>
+  <p>{{ .Site.Params.description }}</p>
+
+  <div class="timeline">
+    {{ range .Pages.ByDate.Reverse }}
+      <div class="timeline-item">
+        <div class="timeline-date">{{ .Date.Format "2006-01-02" }}</div>
+        <div class="timeline-content">
+          <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+          <p>{{ .Summary }}</p>
+        </div>
+      </div>
+    {{ end }}
+  </div>
+  {{ template "_internal/pagination.html" . }}
+{{ end }}

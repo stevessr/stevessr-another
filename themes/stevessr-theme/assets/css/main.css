@@ -1,0 +1,103 @@
+body {
+  color: #222;
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin: 1rem;
+  max-width: 768px;
+}
+
+header {
+  border-bottom: 1px solid #222;
+  margin-bottom: 1rem;
+}
+
+footer {
+  border-top: 1px solid #222;
+  margin-top: 1rem;
+}
+
+a {
+  color: #00e;
+  text-decoration: none;
+}
+
+
+.timeline {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.timeline-item {
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 40px;
+}
+
+.timeline-item:before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #2196F3;
+  border-radius: 50%;
+}
+
+.timeline-date {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.timeline-content h2 {
+  margin: 0;
+}
+
+.timeline-content p {
+  margin: 5px 0 0;
+}
+
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* 使菜单项水平排列 */
+  justify-content: center; /* 水平居中，或用 space-between、flex-end 调整对齐方式 */
+}
+
+.nav-menu li {
+  margin-right: 20px; /* 菜单项之间的间距 */
+}
+
+.nav-menu li:last-child {
+  margin-right: 0; /* 去除最后一个菜单项的右边距 */
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.nav-menu a:hover {
+  color: #2196F3; /* 悬停效果 */
+  text-decoration: underline; /* 可选，添加下划线效果 */
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-menu li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .nav-menu li:last-child {
+    margin-bottom: 0;
+  }
+}

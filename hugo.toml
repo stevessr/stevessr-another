@@ -1,0 +1,53 @@
+#hugo.toml
+baseURL = 'https://example.org/'
+languageCode = 'en_us'
+title = 'stevessr的自定义hugo博客'
+theme = "test theme"
+
+[Site.Author]
+  avaterurl = "https://img06.tooopen.com/20171224/tooopen_sy_231021357463.jpg"
+
+[params.author]
+  name = "Your Name"
+  bio = "A brief bio about yourself."
+  avatarurl = "images/avatar.jpg"
+
+[params]
+  [params.vssue]
+    enable = false
+    vue_version = "runtime"  # runtime or full
+    provider = "Github" # Github or Gitlab or Bitbucket or Gitee or Gitea
+    owner = ""
+    repo = ""
+    clientId = ""
+    clientSecret = ""
+    basetest = "runtime"
+  [params.gitalk]
+    enable = false
+    clientID = ""
+    clientSecret = ""
+    repo = ""
+    owner = ""
+    admin = ""
+  [params.Waline]
+    enable = false
+    serverURL = ""
+  [params.valine]
+    enable = false
+    appId = ""
+    appKey = ""
+  [params.giscus]
+  enable = false
+   src="https://giscus.app/client.js"
+    data_repo="[在此输入仓库]"
+    data_repo_id="[在此输入仓库 ID]"
+    data_category="[在此输入分类名]"
+    data_category_id="[在此输入分类 ID]"
+    data_mapping="pathname"
+    data_strict="0"
+    data_reactions_enabled="1"
+    data_emit_metadata="0"
+    data_input_position="bottom"
+    data_theme="preferred_color_scheme"
+    data_lang="zh_CN"
+    crossorigin="anonymous"

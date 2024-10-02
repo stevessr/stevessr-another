@@ -1,0 +1,101 @@
+/* 容器 */
+.container {
+    max-width: 100%; /* 移动设备上容器最大宽度设为100% */
+    margin: 0 auto;
+    padding: 15px; /* 缩小边距适应小屏幕 */
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 1200px; /* 大屏幕设备上保持原样 */
+        padding: 20px;
+    }
+}
+
+/* 页面标题 */
+.page-title {
+    font-size: 2em; /* 移动设备上字体稍微缩小 */
+    margin-bottom: 20px; /* 缩小标题与内容之间的间距 */
+    text-align: center;
+    color: #333;
+}
+
+@media (min-width: 768px) {
+    .page-title {
+        font-size: 2.5em; /* 大屏幕设备上保持原样 */
+        margin-bottom: 30px;
+    }
+}
+
+/* 标签列表 */
+.tag-list {
+    display: flex;
+    flex-direction: column; /* 移动设备上标签垂直排列 */
+    gap: 15px; /* 缩小间距适应小屏幕 */
+    justify-content: center;
+    align-items: center; /* 标签居中 */
+}
+
+@media (min-width: 768px) {
+    .tag-list {
+        flex-direction: row; /* 大屏幕设备上保持水平排列 */
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+/* 标签卡片 */
+.tag-card {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* 移动设备上标签卡片占满可用宽度 */
+    max-width: 280px; /* 设置最大宽度确保在小屏幕上卡片不过大 */
+    padding: 15px; /* 缩小边距适应小屏幕 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .tag-card {
+        width: 280px; /* 大屏幕设备上保持原样 */
+        padding: 20px;
+    }
+}
+
+.tag-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* 标签链接 */
+.tag-card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 标签标题 */
+.tag-card-title {
+    font-size: 1.3em; /* 移动设备上字体稍微缩小 */
+    margin-bottom: 8px; /* 缩小标题与内容之间的间距 */
+    color: #007ACC;
+}
+
+@media (min-width: 768px) {
+    .tag-card-title {
+        font-size: 1.5em; /* 大屏幕设备上保持原样 */
+        margin-bottom: 10px;
+    }
+}
+
+/* 标签数量 */
+.tag-card-count {
+    font-size: 0.9em; /* 移动设备上字体稍微缩小 */
+    color: #666;
+}
+
+@media (min-width: 768px) {
+    .tag-card-count {
+        font-size: 1em; /* 大屏幕设备上保持原样 */
+    }
+}
